@@ -54,8 +54,8 @@ func genPreviousHash(number string, dataHash string, previousHash string) string
 }
 
 func main() {
-	if len(os.Args) <= 3 {
-		panic("Wrong argument number")
+	if len(os.Args) != 4 {
+		panic("Wrong argument number.")
 	}
 
 	args := os.Args[1:]
